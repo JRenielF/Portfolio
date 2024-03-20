@@ -495,3 +495,92 @@ span {
   font-size: 1.5rem;
   color: var(--second-bg-color);
 }
+/* Certificate Section */
+.certificate {
+  padding: 5rem 0;
+  background-color: var(--second-bg-color);
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.carousel-indicators .active {
+  background-color: var(--main-color);
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item {
+  display: none;
+  position: relative;
+  text-align: center;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-item img {
+  width: 10px;
+  height: 5px;
+  
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.carousel-control-prev {
+  left: -50px;
+}
+
+.carousel-control-next {
+  right: -50px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .certificate {
+    padding: 3rem 0;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 40%;
+  }
+}
+
