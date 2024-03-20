@@ -503,6 +503,8 @@ span {
 
 .carousel {
   position: relative;
+  width: 80%; /* Adjust width as needed */
+  margin: 0 auto; /* Center the carousel */
 }
 
 .carousel-indicators {
@@ -526,16 +528,16 @@ span {
   background-color: var(--main-color);
 }
 
-.carousel-inner {
+carousel-inner {
   position: relative;
   width: 100%;
   overflow: hidden;
+  height: 400px; /* Adjust height as needed */
 }
 
-.carousel-item {
-  display: none;
-  position: relative;
-  text-align: center;
+.carousel-item img {
+  width: 100%;
+  height: auto;
 }
 
 .carousel-item.active {
@@ -572,15 +574,15 @@ span {
   right: -50px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .certificate {
-    padding: 3rem 0;
+@media (max-width: 1024px) {
+  .carousel-inner {
+    height: 300px; /* Adjust height for smaller laptops */
   }
+}
 
-  .carousel-control-prev,
-  .carousel-control-next {
-    top: 40%;
+@media (max-width: 768px) {
+  .carousel-inner {
+    height: 200px; /* Adjust height for tablets */
   }
 }
 
