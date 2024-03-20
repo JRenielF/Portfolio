@@ -543,8 +543,8 @@ span {
 }
 
 .carousel-item img {
-  width: 6px;
-  height: 10px;
+  max-width: 100%;
+  height: auto;
   
 }
 
